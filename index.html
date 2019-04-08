@@ -54,20 +54,35 @@
     </script>
 </head>
 <body>
-        <div class="row">
-            <div class="col-md-6" style="margin:5px">
-                <label>取餐姓名:</label>
-                <input class="form-control" type="text" id="userid">   <br>
-                <label>QueryString:</label>
-                <input class="form-control" type="text" id="QueryString"><br>
-                <button class="btn btn-primary" id="ButtonGetProfile">Get Profile</button>
-                <input class="form-control" type="text" id="UserInfo"><br>
-                <label>手機號碼:</label>
-                <input class="form-control" type="text" id="msg" value="09xx-xxx-xxx"><br>
-                <button class="btn btn-primary" id="ButtonSendMsg">確定送單</button>
-            </div>
+    <div class="row">
+        <div class="col-md-6" style="margin:5px">
+            <label>取餐姓名:</label>
+            <input class="form-control" type="text" id="userid">
+            <br>
+            <label>QueryString:</label>
+            <input class="form-control" type="text" id="QueryString">
+            <br>
+            <button class="btn btn-primary" id="ButtonGetProfile">Get Profile</button>
+            <input class="form-control" type="text" id="UserInfo">
+            <br>
+            <label>手機號碼:</label>
+            <input class="form-control" type="text" id="msg" value="09xx-xxx-xxx">
+            <br>
+            <label>用餐方式:</label>
+            <input type="radio" name="dining" value="takeaway">外帶<br>
+            <input type="radio" name="dining" value="forhere">內用
+            <br>
+            <label>取餐時間:</label>
+            <input type="time" name="usr_time">
+            <br>
+            <label>訂購餐點:</label>
+            <input type="radio" name="meal" value="A">A套餐：烤肉蛋餅+中杯奶茶 NT.50<br>
+            <input type="radio" name="meal" value="B">B套餐：烤肉蛋餅+大杯紅茶 NT.50<br>
+            <input type="radio" name="meal" value="C">C套餐：黃金豬漢堡+中杯奶茶 NT.65<br>
+            <input type="radio" name="meal" value="D">D套餐：黃金豬漢堡+大杯紅茶 NT.65
+            <p>備註:需其他餐點請現場點單，謝謝。</p>
+            <button class="btn btn-primary" id="ButtonSendMsg">確定送單</button>
         </div>
-
-
+    </div>
 </body>
 </html>
