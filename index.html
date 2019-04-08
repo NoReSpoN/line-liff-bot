@@ -1,12 +1,13 @@
-<html><head>
+<html>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>test LIFF</title>
     <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script>        //init LIFF
         function initializeApp(data) {
             //取得QueryString
@@ -49,22 +50,24 @@
                    alert('done');
                })
             });
-        });</script>
-<style></style></head>
+        });
+    </script>
+</head>
 <body>
         <div class="row">
             <div class="col-md-6" style="margin:5px">
-                <label>user id:</label>
+                <label>取餐姓名:</label>
                 <input class="form-control" type="text" id="userid">   <br>
                 <label>QueryString:</label>
                 <input class="form-control" type="text" id="QueryString"><br>
                 <button class="btn btn-primary" id="ButtonGetProfile">Get Profile</button>
                 <input class="form-control" type="text" id="UserInfo"><br>
-                <label>要傳送的訊息:</label>
-                <input class="form-control" type="text" id="msg" value="測試"><br>
-                <button class="btn btn-primary" id="ButtonSendMsg">要傳送的訊息</button>
+                <label>手機號碼:</label>
+                <input class="form-control" type="text" id="msg" value="09xx-xxx-xxx"><br>
+                <button class="btn btn-primary" id="ButtonSendMsg">確定送單</button>
             </div>
         </div>
 
 
-</body></html>
+</body>
+</html>
