@@ -13,7 +13,7 @@ function doGet(e) {
 var CHANNEL_ACCESS_TOKEN = "BqLLx3R9hWQhi67IXQQEw3nuDIm0TsF4jUFwuM9ACQPhIrW6zUvmU1g56AFzi8PB4XuX5dVQwg1DhpLdhuTAIDe/lHU3I8pOwPrTDHiIDHN+ev2cd92IAhn4sG023K4JzQi/nWnpAIttncEzkPKYBwdB04t89/1O/w1cDnyilFU=";
 
 //註冊LIFF app的設定方式 https://developers.line.biz/en/docs/liff/registering-liff-apps/
-var appId = "你自己在LINE Developer的Messaging API註冊的LIFF URL";
+var appId = "line://app/1562618351-VjvMZwWB";
 
 function doPost(e) {
   var contents = e.postData.contents;
