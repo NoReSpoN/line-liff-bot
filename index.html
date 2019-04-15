@@ -43,12 +43,17 @@
                 liff.sendMessages([
                  {
                      type: 'text',
-                     text: '手機號碼' + $('#phone_number').val()
+                     text: '手機號碼: ' + $('#phone_number').val()
                      
                  },
                  {
                      type: 'text',
-                     text: '取餐時間' + $('#select_time').val()
+                     text: '用餐方式' + $('input[name="meal"]:checked').val()
+                     
+                 }
+                 {
+                     type: 'text',
+                     text: '取餐時間: ' + $('#select_time').val()
                      
                  }
                 ])
