@@ -45,7 +45,7 @@
                      text: '手機號碼 ' + $('#phone_number').val()
                      
                  },
-                 /**{
+                 {
                      type: 'text',
                      text: '用餐方式：' + $('input[name=dining]:checked').val()
                      
@@ -59,7 +59,7 @@
                      type: 'text',
                      text: '訂購餐點：' + $('input[name="meal"]:checked').val()
                      
-                 }**/
+                 }
                 ])
                .then(() => {
                    alert('done');
@@ -71,15 +71,6 @@
 <body>
         <div class="row">
             <div class="col-md-6" style="margin:5px">
-                <!--label>user id:</label>
-                <input class="form-control" type="text" id="userid" />   <br />
-                <label>QueryString:</label>
-                <input class="form-control" type="text" id="QueryString" /><br />
-                <button class="btn btn-primary" id="ButtonGetProfile">Get Profile</button>
-                <input class="form-control" type="text" id="UserInfo" /><br />
-                <label>要傳送的訊息:</label>
-                <input class="form-control" type="text" id="msg" value="測試" /><br />
-                <button class="btn btn-primary" id="ButtonSendMsg"  >要傳送的訊息</button-->
                 <div class="form-group">
                     <label>User ID</label>
                     <input class="form-control" type="text" id="userid">
