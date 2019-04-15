@@ -42,8 +42,24 @@
                 liff.sendMessages([
                  {
                      type: 'text',
-                     text: $('#msg').val()
+                     text: '手機號碼 ' + $('#phone_number').val()
+                     
                  },
+                 /**{
+                     type: 'text',
+                     text: '用餐方式：' + $('input[name=dining]:checked').val()
+                     
+                 },
+                 {
+                     type: 'text',
+                     text: '取餐時間：' + $('#select_time').val()
+                     
+                 },
+                 {
+                     type: 'text',
+                     text: '訂購餐點：' + $('input[name="meal"]:checked').val()
+                     
+                 }**/
                 ])
                .then(() => {
                    alert('done');
@@ -55,7 +71,7 @@
 <body>
         <div class="row">
             <div class="col-md-6" style="margin:5px">
-                <label>user id:</label>
+                <!--label>user id:</label>
                 <input class="form-control" type="text" id="userid" />   <br />
                 <label>QueryString:</label>
                 <input class="form-control" type="text" id="QueryString" /><br />
@@ -63,7 +79,59 @@
                 <input class="form-control" type="text" id="UserInfo" /><br />
                 <label>要傳送的訊息:</label>
                 <input class="form-control" type="text" id="msg" value="測試" /><br />
-                <button class="btn btn-primary" id="ButtonSendMsg"  >要傳送的訊息</button>
+                <button class="btn btn-primary" id="ButtonSendMsg"  >要傳送的訊息</button-->
+                <div class="form-group">
+                    <label>User ID</label>
+                    <input class="form-control" type="text" id="userid">
+                </div>
+                <div class="form-group">
+                    <label>QueryString:</label>
+                    <input class="form-control" type="text" id="QueryString">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary" id="ButtonGetProfile">Get Profile</button>
+                    <input class="form-control" type="text" id="UserInfo">
+                </div>
+                <div class="form-group">
+                    <label>手機號碼:</label>
+                    <input class="form-control" type="text" id="phone_number" placeholder="09xx-xxx-xxx">
+                </div>
+                <div class="form-group">
+                    <label>用餐方式:</label>
+                    <div class="form-check">
+                        <input class="form-check-input dining" type="radio" name="dining" value="外帶" id="radio-takeaway">
+                        <label class="form-check-label" for="radio-takeaway">外帶</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input dining" type="radio" name="dining" value="內用"  id="radio-forhere">
+                        <label class="form-check-label" for="radio-forhere">內用</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>取餐時間:</label>
+                    <input class="form-control" type="time" id="select_time" >
+                </div>
+                <div class="form-group">
+                    <label>訂購餐點:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="meal" value="A餐">
+                        <label class="form-check-label">A套餐：烤肉蛋餅+中杯奶茶 NT.50</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="meal" value="B餐">
+                        <label class="form-check-label">B套餐：烤肉蛋餅+大杯紅茶 NT.50</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="meal" value="C餐">
+                        <label class="form-check-label">C套餐：黃金豬漢堡+中杯奶茶 NT.65</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="meal" value="D餐">
+                        <label class="form-check-label">D套餐：黃金豬漢堡+大杯紅茶 NT.65</label>
+                    </div>
+                </div>
+                <p>備註:需其他餐點請現場點單，謝謝。</p>
+                <button class="btn btn-primary" id="ButtonSendMsg">確定送單</button>
             </div>
         </div>
 </body>
