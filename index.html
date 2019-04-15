@@ -43,12 +43,22 @@
                 liff.sendMessages([
                  {
                      type: 'text',
-                     text: $('#msg').val()
+                     text: $('#phone_number').val()
                      
                  },
                  {
                      type: 'text',
-                     text: $('#test').val()
+                     text: $('input[name='dining']:checked').val()
+                     
+                 },
+                 {
+                     type: 'text',
+                     text: $('#select_time').val()
+                     
+                 },
+                 {
+                     type: 'text',
+                     text: $('input[name='meal']:checked').val()
                      
                  }
                 ])
@@ -78,43 +88,39 @@
                 </div>
                 <div class="form-group">
                     <label>手機號碼:</label>
-                    <input class="form-control" type="text" id="msg" placeholder="09xx-xxx-xxx">
-                </div>
-                <div class="form-group">
-                    <label>手機號碼test:</label>
-                    <input class="form-control" type="text" id="test" placeholder="09xx-xxx-xxx">
+                    <input class="form-control" type="text" id="phone_number" placeholder="09xx-xxx-xxx">
                 </div>
                 <div class="form-group">
                     <label>用餐方式:</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="dining" value="takeaway" id="radio-takeaway">
+                        <input class="form-check-input" type="radio" name="dining" value="外帶" id="radio-takeaway">
                         <label class="form-check-label" for="radio-takeaway">外帶</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="dining" value="forhere"  id="radio-forhere">
+                        <input class="form-check-input" type="radio" name="dining" value="內用"  id="radio-forhere">
                         <label class="form-check-label" for="radio-forhere">內用</label>
                     </div>
                 </div>
                 <div class="form-group">
                     <label>取餐時間:</label>
-                    <input class="form-control" type="time">
+                    <input class="form-control" id="select_time" type="time">
                 </div>
                 <div class="form-group">
                     <label>訂購餐點:</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="meal" value="A">
+                        <input class="form-check-input" type="radio" name="meal" value="A餐">
                         <label class="form-check-label">A套餐：烤肉蛋餅+中杯奶茶 NT.50</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="meal" value="B">
+                        <input class="form-check-input" type="radio" name="meal" value="B餐">
                         <label class="form-check-label">B套餐：烤肉蛋餅+大杯紅茶 NT.50</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="meal" value="C">
+                        <input class="form-check-input" type="radio" name="meal" value="C餐">
                         <label class="form-check-label">C套餐：黃金豬漢堡+中杯奶茶 NT.65</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="meal" value="D">
+                        <input class="form-check-input" type="radio" name="meal" value="D餐">
                         <label class="form-check-label">D套餐：黃金豬漢堡+大杯紅茶 NT.65</label>
                     </div>
                 </div>
