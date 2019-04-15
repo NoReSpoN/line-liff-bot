@@ -48,12 +48,17 @@
                  },
                  {
                      type: 'text',
-                     text: $('input.dining:checked').val()
+                     text: '用餐方式：' + $('input[name=dining]:checked').val()
                      
                  },
                  {
                      type: 'text',
                      text: '取餐時間為' + $('#select_time').val()
+                     
+                 },
+                 {
+                     type: 'text',
+                     text: '訂購餐點：' + $('input[name="meal"]:checked').val()
                      
                  }
                 ])
