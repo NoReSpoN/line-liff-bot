@@ -48,7 +48,7 @@
                  },
                  {
                      type: 'text',
-                     text: '用餐方式: ' + $("input[name='dining']:checked").val()
+                     text: $(".dining:checked").val()
                      
                  }
                  {
@@ -88,11 +88,11 @@
                 <div class="form-group">
                     <label>用餐方式:</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="dining" value="外帶" id="radio-takeaway">
+                        <input class="form-check-input dining" type="radio" name="dining" value="外帶" id="radio-takeaway">
                         <label class="form-check-label" for="radio-takeaway">外帶</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="dining" value="內用"  id="radio-forhere">
+                        <input class="form-check-input dining" type="radio" name="dining" value="內用"  id="radio-forhere">
                         <label class="form-check-label" for="radio-forhere">內用</label>
                     </div>
                 </div>
