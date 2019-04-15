@@ -54,64 +54,60 @@
     </script>
 </head>
 <body>
-    <div class="row">
-        <div class="col-md-6" style="margin:5px">
-            <!-- https://getbootstrap.com/docs/4.0/components/forms/ -->
-            <form>
-                <div class="form-group">
-                    <label>取餐姓名:</label>
-                    <input class="form-control" type="text" id="userid">
-                </div>
-                <div class="form-group">
-                    <label>QueryString:</label>
-                    <input class="form-control" type="text" id="QueryString">
-                </div>
-                <div class="form-group">
-                    <button class="btn btn-primary" id="ButtonGetProfile">Get Profile</button>
-                    <input class="form-control" type="text" id="UserInfo">
-                </div>
-                <div class="form-group">
-                    <label>手機號碼:</label>
-                    <input class="form-control" type="text" id="msg" value="09xx-xxx-xxx">
-                </div>
-                <div class="form-group">
-                    <label>用餐方式:</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="dining" value="takeaway" id="radio-takeaway">
-                        <label class="form-check-label" for="radio-takeaway">外帶</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="dining" value="forhere"  id="radio-forhere">
-                        <label class="form-check-label" for="radio-forhere">內用</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>取餐時間:</label>
-                    <input class="form-control" type="time" name="usr_time">
-                </div>
-                <div class="form-group">
-                    <label>訂購餐點:</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="meal" value="A">
-                        <label class="form-check-label">A套餐：烤肉蛋餅+中杯奶茶 NT.50</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="meal" value="B">
-                        <label class="form-check-label">B套餐：烤肉蛋餅+大杯紅茶 NT.50</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="meal" value="C">
-                        <label class="form-check-label">C套餐：黃金豬漢堡+中杯奶茶 NT.65</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="meal" value="D">
-                        <label class="form-check-label">D套餐：黃金豬漢堡+大杯紅茶 NT.65</label>
-                    </div>
-                </div>
-                <p>備註:需其他餐點請現場點單，謝謝。</p>
-                <button class="btn btn-primary" id="ButtonSendMsg">確定送單</button>
-            </form>
+    <!-- https://getbootstrap.com/docs/4.0/components/forms/ -->
+    <form>
+        <div class="form-group">
+            <label>取餐姓名:</label>
+            <input class="form-control" type="text" id="userid">
         </div>
-    </div>
+        <div class="form-group">
+            <label>QueryString:</label>
+            <input class="form-control" type="text" id="QueryString">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" id="ButtonGetProfile">Get Profile</button>
+            <input class="form-control" type="text" id="UserInfo">
+        </div>
+        <div class="form-group">
+            <label>手機號碼:</label>
+            <input class="form-control" type="text" id="msg" value="09xx-xxx-xxx">
+        </div>
+        <div class="form-group">
+            <label>用餐方式:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="dining" value="takeaway" id="radio-takeaway">
+                <label class="form-check-label" for="radio-takeaway">外帶</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="dining" value="forhere"  id="radio-forhere">
+                <label class="form-check-label" for="radio-forhere">內用</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>取餐時間:</label>
+            <input class="form-control" type="time" name="usr_time">
+        </div>
+        <div class="form-group">
+            <label>訂購餐點:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="meal" value="A">
+                <label class="form-check-label">A套餐：烤肉蛋餅+中杯奶茶 NT.50</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="meal" value="B">
+                <label class="form-check-label">B套餐：烤肉蛋餅+大杯紅茶 NT.50</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="meal" value="C">
+                <label class="form-check-label">C套餐：黃金豬漢堡+中杯奶茶 NT.65</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="meal" value="D">
+                <label class="form-check-label">D套餐：黃金豬漢堡+大杯紅茶 NT.65</label>
+            </div>
+        </div>
+        <p>備註:需其他餐點請現場點單，謝謝。</p>
+        <button class="btn btn-primary" id="ButtonSendMsg">確定送單</button>
+    </form>
 </body>
 </html>
