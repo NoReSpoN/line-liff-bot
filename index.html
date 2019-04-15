@@ -11,9 +11,9 @@
     <script>        //init LIFF
         function initializeApp(data) {
             //取得QueryString
-            //let urlParams = new URLSearchParams(window.location.search);
+            let urlParams = new URLSearchParams(window.location.search);
             //顯示QueryString
-            //$('#QueryString').val(urlParams.toString());
+            $('#QueryString').val(urlParams.toString());
             //顯示UserId
             $('#userid').val(data.context.userId);
         }
@@ -46,7 +46,7 @@
                      text: '手機號碼 ' + $('#phone_number').val()
                      
                  },
-                 {
+                 /**{
                      type: 'text',
                      text: '用餐方式：' + $('input[name=dining]:checked').val()
                      
@@ -60,7 +60,7 @@
                      type: 'text',
                      text: '訂購餐點：' + $('input[name="meal"]:checked').val()
                      
-                 }
+                 }**/
                 ])
                .then(() => {
                    alert('done');
