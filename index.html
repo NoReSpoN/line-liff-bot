@@ -43,9 +43,9 @@
                 liff.sendMessages([
                  {
                      type: 'text',
-                     text: '手機號碼 ' + $('#phone_number').val()
+                     text: '手機號碼 ' + $('#phone_number').val() + '<br>用餐方式：' + $('input[name=dining]:checked').val() + '<br>取餐時間：' + $('#select_time').val() + '<br>訂購餐點：' + $('input[name="meal"]:checked').val()
                      
-                 },
+                 }/**,
                  {
                      type: 'text',
                      text: '用餐方式：' + $('input[name=dining]:checked').val()
@@ -60,7 +60,7 @@
                      type: 'text',
                      text: '訂購餐點：' + $('input[name="meal"]:checked').val()
                      
-                 }
+                 }**/
                 ])
                .then(() => {
                    alert('done');
